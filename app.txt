@@ -9,17 +9,7 @@ root.title('Clock')
 root.geometry("700x600")
 root.resizable(False, False)
 
-def submit():
-   try:
-      temp = int(hh.get())*3600 + int(ss.get())
-      except:
-         print('Please input the right value')
-      while temp = -1:
-         mins,secs = divmod(temp,60)
-         hours=0
-         if mins < 60
 
-         hours,mins = divmod(temp,60)
 
 def am():
    am = time.strftime("%p")
@@ -74,27 +64,6 @@ for col in range(col_count):
 
 for row in range(row_count):
     root.grid_rowconfigure(row, minsize=20)
-
-
-
-hh = StringVar()
-mm = StringVar()
-ss = StringVar()
-
-hh.set("00")
-mm.set("00")
-ss.set("00")
-
-mmEntry= Entry(root, width=3, font=('Arial', 18,""), textvariable=mm)
-mmEntry.grid(column=2, row=1)
-
-hhEntry= Entry(root, width=3, font=('Arial', 18,""), textvariable=hh)
-hhEntry.grid(column=1, row=1)
-
-ssEntry= Entry(root, width=3, font=('Arial', 18,""), textvariable=ss)
-ssEntry.grid(column=3, row=1)
-
-
 
 
 
